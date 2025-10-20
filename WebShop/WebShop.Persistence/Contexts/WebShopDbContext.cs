@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using WebShop.Application.Repositories.Interfaces.Contexts;
+using WebShop.Application.Repositories.Framework.Interfaces.Contexts;
 using WebShop.Domain.Entities.Users;
 using WebShop.Persistence.AddAuditFieldInterceptors;
 

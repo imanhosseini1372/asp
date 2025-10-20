@@ -2070,7 +2070,8 @@
       "WebShop.Application/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.10",
-          "WebShop.Domain": "1.0.0"
+          "WebShop.Domain": "1.0.0",
+          "WebShop.Framework": "1.0.0"
         },
         "runtime": {
           "WebShop.Application.dll": {
@@ -2082,6 +2083,14 @@
       "WebShop.Domain/1.0.0": {
         "runtime": {
           "WebShop.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "WebShop.Framework/1.0.0": {
+        "runtime": {
+          "WebShop.Framework.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -3214,6 +3223,11 @@
       "sha512": ""
     },
     "WebShop.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebShop.Framework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

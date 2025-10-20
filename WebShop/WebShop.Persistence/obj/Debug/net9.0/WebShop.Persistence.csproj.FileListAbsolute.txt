@@ -18,3 +18,5 @@ C:\Project\WebShop\WebShop\WebShop.Persistence\obj\Debug\net9.0\refint\WebShop.P
 C:\Project\WebShop\WebShop\WebShop.Persistence\obj\Debug\net9.0\WebShop.Persistence.pdb
 C:\Project\WebShop\WebShop\WebShop.Persistence\obj\Debug\net9.0\WebShop.Persistence.genruntimeconfig.cache
 C:\Project\WebShop\WebShop\WebShop.Persistence\obj\Debug\net9.0\ref\WebShop.Persistence.dll
+C:\Project\WebShop\WebShop\WebShop.Persistence\bin\Debug\net9.0\WebShop.Framework.dll
+C:\Project\WebShop\WebShop\WebShop.Persistence\bin\Debug\net9.0\WebShop.Framework.pdb

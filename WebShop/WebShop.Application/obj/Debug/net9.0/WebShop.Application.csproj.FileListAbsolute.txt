@@ -14,3 +14,5 @@ C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Applicat
 C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\refint\WebShop.Application.dll
 C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.pdb
 C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\ref\WebShop.Application.dll
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Framework.dll
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Framework.pdb
