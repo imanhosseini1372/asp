@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="wwwroot\SiteTemplate\assets\images\menu-main\card\" />
   </ItemGroup>
 
 </Project>
