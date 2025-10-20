@@ -1,0 +1,11 @@
+C:\Project\WebShop\WebShop\WebShop.Domain\bin\Debug\net9.0\WebShop.Domain.deps.json
+C:\Project\WebShop\WebShop\WebShop.Domain\bin\Debug\net9.0\WebShop.Domain.dll
+C:\Project\WebShop\WebShop\WebShop.Domain\bin\Debug\net9.0\WebShop.Domain.pdb
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.AssemblyInfoInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.AssemblyInfo.cs
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.csproj.CoreCompileInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.dll
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\refint\WebShop.Domain.dll
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.pdb
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\ref\WebShop.Domain.dll

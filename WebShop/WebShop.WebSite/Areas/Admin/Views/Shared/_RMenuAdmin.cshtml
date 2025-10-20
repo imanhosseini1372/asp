@@ -1,0 +1,53 @@
+﻿
+<div data-active-color="white" data-background-color="black" data-image="~/AdminTemplate/app-assets/img/sidebar-bg/01.jpg" class="app-sidebar">
+    <div class="sidebar-header">
+        <div class="logo clearfix">
+            <a class="logo-text float-right">
+                <span class="text align-middle">@User.Identity.Name</span>
+            </a><a id="sidebarToggle" href="javascript:;" class="nav-toggle d-none d-sm-none d-md-none d-lg-block"><i data-toggle="expanded" class="ft-disc toggle-icon"></i></a><a id="sidebarClose" href="javascript:;" class="nav-close d-block d-md-block d-lg-none d-xl-none"><i class="ft-circle"></i></a>
+        </div>
+    </div>
+    <div class="sidebar-content">
+        <div class="nav-container">
+            <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+                <li class="has-sub nav-item">
+                    <a href="#"><i class="icon-home"></i><span data-i18n="" class="menu-title">داشبورد</span></a>
+                </li>
+                <li class="has-sub nav-item">
+                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">کاربران</span></a>
+                    <ul>
+                        <li class="has-sub nav-item"><a asp-action="UserList" asp-controller="Account"><span data-i18n="" class="menu-title">لیست کاربران</span></a></li>
+                        <li class="has-sub nav-item"><a asp-action="CreateUser" asp-controller="Account"><span data-i18n="" class="menu-title">افزودن کاربر</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="has-sub nav-item">
+                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">مدیریت دسته بندی ها</span></a>
+                    <ul>
+                        <li class="has-sub nav-item"><a asp-action="CateguryList" asp-controller="Categury"><span data-i18n="" class="menu-title">لیست دسته بندی ها</span></a></li>
+                        <li class="has-sub nav-item"><a asp-action="CreateCategury" asp-controller="Categury"><span data-i18n="" class="menu-title">افزودن دسته بندی</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="has-sub nav-item">
+                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">مدیریت خبرها</span></a>
+                    <ul>
+                        <li class="has-sub nav-item"><a asp-action="PageList" asp-controller="Pages"><span data-i18n="" class="menu-title">لیست خبر ها</span></a></li>
+                        <li class="has-sub nav-item"><a asp-action="CreatePage" asp-controller="Pages"><span data-i18n="" class="menu-title">افزودن خبر</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="has-sub nav-item">
+                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">مدیریت نظرات</span></a>
+                    <ul>
+                        <li class="has-sub nav-item"><a asp-action="CommentsList" asp-controller="Comments"><span data-i18n="" class="menu-title">لیست نظرها</span></a></li>
+                        <li class="has-sub nav-item"><a asp-action="CommentsNotApproved" asp-controller="Comments"><span data-i18n="" class="menu-title">لیست نظرها تایید نشده</span></a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar-background"></div>
+</div>
