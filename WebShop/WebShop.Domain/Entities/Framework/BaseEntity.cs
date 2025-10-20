@@ -10,8 +10,7 @@ namespace WebShop.Domain.Entities.Framework
     {
         public int Id { get; set; }
         public bool IsDeleted { get; set; } = false;
-        public int CreateUserId { get; set; }
-        public int UpdateUserId { get; set; }
+
 
     }
 }

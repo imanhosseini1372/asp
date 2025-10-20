@@ -1,0 +1,16 @@
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Application.deps.json
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Application.dll
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Application.pdb
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Domain.dll
+C:\Project\WebShop\WebShop\WebShop.Application\bin\Debug\net9.0\WebShop.Domain.pdb
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.csproj.AssemblyReference.cache
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.AssemblyInfoInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.AssemblyInfo.cs
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.csproj.CoreCompileInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.sourcelink.json
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop..522328A2.Up2Date
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.dll
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\refint\WebShop.Application.dll
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\WebShop.Application.pdb
+C:\Project\WebShop\WebShop\WebShop.Application\obj\Debug\net9.0\ref\WebShop.Application.dll

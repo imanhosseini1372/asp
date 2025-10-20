@@ -1,0 +1,12 @@
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\bin\Debug\net9.0\WebShop.Infrastructure.deps.json
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\bin\Debug\net9.0\WebShop.Infrastructure.dll
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\bin\Debug\net9.0\WebShop.Infrastructure.pdb
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.AssemblyInfoInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.AssemblyInfo.cs
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.sourcelink.json
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.dll
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\refint\WebShop.Infrastructure.dll
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\WebShop.Infrastructure.pdb
+C:\Project\WebShop\WebShop\WebShop.Infrastructure\obj\Debug\net9.0\ref\WebShop.Infrastructure.dll

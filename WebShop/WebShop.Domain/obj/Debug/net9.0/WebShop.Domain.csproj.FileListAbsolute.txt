@@ -9,3 +9,4 @@ C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.dll
 C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\refint\WebShop.Domain.dll
 C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.pdb
 C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\ref\WebShop.Domain.dll
+C:\Project\WebShop\WebShop\WebShop.Domain\obj\Debug\net9.0\WebShop.Domain.sourcelink.json

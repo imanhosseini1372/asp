@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Project\\WebShop\\WebShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Project\\WebShop\\WebShop\\WebShop.Persistence\\Migrations\\20251020114650_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebShop.Persistence\\Migrations\\20251020114650_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|c:\\project\\webshop\\webshop\\webshop.domain\\entities\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|solutionrelative:webshop.domain\\entities\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|c:\\project\\webshop\\webshop\\webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|solutionrelative:webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\hostingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\hostingextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2919FA78-4EA4-46F9-B547-DF90B0C1F8ED}|WebShop.Persistence\\WebShop.Persistence.csproj|c:\\project\\webshop\\webshop\\webshop.persistence\\contexts\\webshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2919FA78-4EA4-46F9-B547-DF90B0C1F8ED}|WebShop.Persistence\\WebShop.Persistence.csproj|solutionrelative:webshop.persistence\\contexts\\webshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D308CE3E-62C7-4855-BCF8-F9D049A65B33}|WebShop.Application\\WebShop.Application.csproj|c:\\project\\webshop\\webshop\\webshop.application\\repositories\\interfaces\\contexts\\iwebshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D308CE3E-62C7-4855-BCF8-F9D049A65B33}|WebShop.Application\\WebShop.Application.csproj|solutionrelative:webshop.application\\repositories\\interfaces\\contexts\\iwebshopdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 377,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +42,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "WebShop.WebSite\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "WebShop.WebSite\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20251020114650_init.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Persistence\\Migrations\\20251020114650_init.cs",
+              "RelativeDocumentMoniker": "WebShop.Persistence\\Migrations\\20251020114650_init.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Persistence\\Migrations\\20251020114650_init.cs",
+              "RelativeToolTip": "WebShop.Persistence\\Migrations\\20251020114650_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T08:19:52.858Z"
+              "WhenOpened": "2025-10-20T11:46:51.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebShop.WebSite\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebShop.WebSite\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAE8CAAAAAAAAAAAawGECAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T08:17:15.402Z",
+              "DocumentIndex": 3,
+              "Title": "HostingExtension.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\HostingExtension.cs",
+              "RelativeDocumentMoniker": "WebShop.WebSite\\HostingExtension.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\HostingExtension.cs",
+              "RelativeToolTip": "WebShop.WebSite\\HostingExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:06:56.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IWebShopDbContext.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Application\\Repositories\\Interfaces\\Contexts\\IWebShopDbContext.cs",
+              "RelativeDocumentMoniker": "WebShop.Application\\Repositories\\Interfaces\\Contexts\\IWebShopDbContext.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Application\\Repositories\\Interfaces\\Contexts\\IWebShopDbContext.cs",
+              "RelativeToolTip": "WebShop.Application\\Repositories\\Interfaces\\Contexts\\IWebShopDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T10:36:37.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WebShopDbContext.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Persistence\\Contexts\\WebShopDbContext.cs",
+              "RelativeDocumentMoniker": "WebShop.Persistence\\Contexts\\WebShopDbContext.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Persistence\\Contexts\\WebShopDbContext.cs",
+              "RelativeToolTip": "WebShop.Persistence\\Contexts\\WebShopDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T10:27:16.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\Role.cs",
+              "RelativeDocumentMoniker": "WebShop.Domain\\Entities\\Users\\Role.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\Role.cs",
+              "RelativeToolTip": "WebShop.Domain\\Entities\\Users\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T10:16:39.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebShop.WebSite\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebShop.WebSite\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAEAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T08:16:55.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Program.cs",
-              "RelativeDocumentMoniker": "WebShop.WebSite\\Program.cs",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Program.cs",
-              "RelativeToolTip": "WebShop.WebSite\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBoAAAAZAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
+              "RelativeDocumentMoniker": "WebShop.Domain\\Entities\\Users\\User.cs",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
+              "RelativeToolTip": "WebShop.Domain\\Entities\\Users\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:36:33.033Z"
+              "WhenOpened": "2025-10-20T10:15:57.553Z",
+              "EditorCaption": ""
             }
           ]
         }

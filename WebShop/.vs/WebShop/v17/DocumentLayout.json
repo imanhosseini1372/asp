@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Project\\WebShop\\WebShop\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|c:\\project\\webshop\\webshop\\webshop.domain\\entities\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|solutionrelative:webshop.domain\\entities\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|c:\\project\\webshop\\webshop\\webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|solutionrelative:webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 377,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\Role.cs",
-              "RelativeDocumentMoniker": "WebShop.Domain\\Entities\\Users\\Role.cs",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\Role.cs",
-              "RelativeToolTip": "WebShop.Domain\\Entities\\Users\\Role.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T10:16:39.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
-              "RelativeDocumentMoniker": "WebShop.Domain\\Entities\\Users\\User.cs",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
-              "RelativeToolTip": "WebShop.Domain\\Entities\\Users\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T10:15:57.553Z",
-              "EditorCaption": ""
             }
           ]
         }

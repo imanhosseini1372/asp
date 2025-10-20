@@ -1,0 +1,12 @@
+C:\Project\WebShop\WebShop\WebShop.Framework\bin\Debug\net9.0\WebShop.Framework.deps.json
+C:\Project\WebShop\WebShop\WebShop.Framework\bin\Debug\net9.0\WebShop.Framework.dll
+C:\Project\WebShop\WebShop\WebShop.Framework\bin\Debug\net9.0\WebShop.Framework.pdb
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.AssemblyInfoInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.AssemblyInfo.cs
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.csproj.CoreCompileInputs.cache
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.sourcelink.json
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.dll
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\refint\WebShop.Framework.dll
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\WebShop.Framework.pdb
+C:\Project\WebShop\WebShop\WebShop.Framework\obj\Debug\net9.0\ref\WebShop.Framework.dll

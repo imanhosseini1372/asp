@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using WebShop.Domain.Entities.Framework;
 
 namespace WebShop.Domain.Entities.Users
 {
-    public class User
+    public class User:BaseEntity
     {
         public string UserName { get; set; }
        
