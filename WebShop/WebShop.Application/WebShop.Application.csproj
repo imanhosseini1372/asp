@@ -17,8 +17,6 @@
 
   <ItemGroup>
     <Folder Include="Repositories\Framework\Services\" />
-    <Folder Include="Repositories\Users\Interfaces\Commands\" />
-    <Folder Include="Repositories\Users\Services\Commands\" />
   </ItemGroup>
 
 </Project>

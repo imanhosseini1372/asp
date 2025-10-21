@@ -1,0 +1,42 @@
+﻿@model UserDto
+
+<div class="container">
+    <h4>افزودن کاربر جدید</h4>
+
+    <form asp-action="CreateUser" class="form-signin" method="post">
+        <div class="form-group">
+            <input asp-for="FullName" type="text" class="form-control" placeholder="نام و نام خانوادگی" autofocus>
+        </div>
+        <div class="form-group">
+            <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری" autofocus>
+        </div>
+        <div class="form-group">
+            <input asp-for="Email" type="email" class="form-control" placeholder="ایمیل ">
+        </div>
+        <div class="form-group">
+            <input asp-for="Password" type="text" class="form-control" placeholder="کلمه عبور">
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">نقش کاربر</label>
+                <div class="col-sm-10">
+                    <select name="RoleId" class="form-control" required>
+
+                        @foreach (RoleDto item in ViewBag.Role)
+                        {
+                            <option value="@item.RoleId">@item.RoleTitle</option>
+                        }
+
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button class=" btn btn-lg btn-success " type="submit">
+            افزودن
+        </button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+
+    </form>
+</div>

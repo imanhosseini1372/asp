@@ -13,16 +13,17 @@
                 <li class="has-sub nav-item">
                     <a href="#"><i class="icon-home"></i><span data-i18n="" class="menu-title">داشبورد</span></a>
                 </li>
-                <li class="has-sub nav-item">
-                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">کاربران</span></a>
+                <li class="has-sub nav-item ">
+                    <a href="#"><i class="icon-user"></i><span data-i18n="" class="menu-title">کاربران</span></a>
                     <ul>
                         <li class="has-sub nav-item"><a asp-action="UserList" asp-controller="Account"><span data-i18n="" class="menu-title">لیست کاربران</span></a></li>
+                        <li class="has-sub nav-item"><a asp-action="UserList" asp-controller="Account" asp-route-isDelete="true"><span data-i18n="" class="menu-title">کاربران حذف شده</span></a></li>
                         <li class="has-sub nav-item"><a asp-action="CreateUser" asp-controller="Account"><span data-i18n="" class="menu-title">افزودن کاربر</span></a></li>
 
                     </ul>
                 </li>
                 <li class="has-sub nav-item">
-                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">مدیریت دسته بندی ها</span></a>
+                    <a href="#"><i class="icon-bar"></i><span data-i18n="" class="menu-title">دسته بندی</span></a>
                     <ul>
                         <li class="has-sub nav-item"><a asp-action="CateguryList" asp-controller="Categury"><span data-i18n="" class="menu-title">لیست دسته بندی ها</span></a></li>
                         <li class="has-sub nav-item"><a asp-action="CreateCategury" asp-controller="Categury"><span data-i18n="" class="menu-title">افزودن دسته بندی</span></a></li>
@@ -30,7 +31,7 @@
                     </ul>
                 </li>
                 <li class="has-sub nav-item">
-                    <a href="#"><i class="icon"></i><span data-i18n="" class="menu-title">مدیریت خبرها</span></a>
+                    <a href="#"><i class="icon-shopping"></i><span data-i18n="" class="menu-title">کالا</span></a>
                     <ul>
                         <li class="has-sub nav-item"><a asp-action="PageList" asp-controller="Pages"><span data-i18n="" class="menu-title">لیست خبر ها</span></a></li>
                         <li class="has-sub nav-item"><a asp-action="CreatePage" asp-controller="Pages"><span data-i18n="" class="menu-title">افزودن خبر</span></a></li>

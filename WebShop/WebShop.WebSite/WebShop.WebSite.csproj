@@ -22,7 +22,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WebShop.Application\WebShop.Application.csproj" />
-    <ProjectReference Include="..\WebShop.Domain\WebShop.Domain.csproj" />
     <ProjectReference Include="..\WebShop.Persistence\WebShop.Persistence.csproj" />
   </ItemGroup>
 

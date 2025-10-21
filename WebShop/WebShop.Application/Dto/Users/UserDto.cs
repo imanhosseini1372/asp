@@ -14,7 +14,9 @@ namespace WebShop.Application.Dto.Users
         public string FullName { get; set; }
 
         public string Email { get; set; }
-
+        public string Password { get; set; }
         public int RoleId { get; set; }
+        public string? RoleTitle { get; set; }
+        public bool IsDelete { get; set; }
     }
 }

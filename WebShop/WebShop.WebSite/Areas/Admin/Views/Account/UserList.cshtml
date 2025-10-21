@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "لیست کاربران";
+}
+@model ResultGetListDto<UserDto>
+
+<div class="container">
+    @if (ViewBag.DeleteList)
+    {
+        <h3 class="text-center">لیست کاربران حذف شده</h3>
+    }
+
+    else
+    {
+        <h3 class="text-center">لیست کاربران</h3>
+    }
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr class="info">
+                <th>ردیف</th>
+                <th>نام</th>
+                <th>نام کاربری</th>
+                <th>ایمیل</th>
+                <th>نقش</th>
+                <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- داده‌های نمونه (در پروژه واقعی با حلقه foreach تولید می‌شود) -->
+            @foreach (var item in Model.List)
+            {
+                <tr>
+                    <td></td>
+                    <td>@item.FullName</td>
+                    <td>@item.UserName</td>
+                    <td>@item.Email</td>
+                    <td>@item.RoleTitle</td>
+                    <td>
+
+                        @if (item.IsDelete)
+                        {
+                            <a asp-action="DeleteUser" asp-route-userId="@item.Id" class="btn btn-xs btn-danger">لغو حذف</a>
+                        }
+                        else
+                        {
+
+                            <a asp-action="EditUser" asp-route-userId="@item.Id" class="btn btn-xs btn-info">ویرایش</a>
+                            <a asp-action="DeleteUser" asp-route-userId="@item.Id" class="btn btn-xs btn-danger">حذف</a>
+                            <a asp-action="ResetPassword" asp-route-userId="@item.Id" class="btn btn-xs btn-success">کلمه عبور پیشفرض</a>
+
+                        }
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+
+    @if (ViewBag.Count > 1)
+    {
+        <nav aria-label="...">
+            <ul class="pagination">
+                @if (ViewBag.Previous >= 1)
+                {
+
+                    <li class="page-item">
+                        <a class="page-link" class="page-link" asp-area="Admin" asp-controller="Account" asp-action="UserList" asp-route-PageNum=@ViewBag.Previous>Previous</a>
+                    </li>
+
+                }
+                @for (int i = 1; i <= ViewBag.Count; i++)
+                {
+                    if (i == ViewBag.PageNum)
+                    {
+                        <li class="page-item active">
+                            <a class="page-link" asp-area="Admin" asp-controller="Account" asp-action="UserList" asp-route-PageNum="@i">@i <span class="sr-only">(current)</span></a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item"><a class="page-link" asp-area="Admin" asp-controller="Account" asp-action="UserList" asp-route-PageNum="@i">@i</a></li>
+                    }
+
+                }
+
+                @if (ViewBag.Next <= ViewBag.Count)
+                {
+                    <li class="page-item">
+                        <a class="page-link" class="page-link" asp-area="Admin" asp-controller="Account" asp-action="UserList" asp-route-PageNum="@ViewBag.Next">Next</a>
+                    </li>
+                }
+
+            </ul>
+        </nav>
+    }
+</div>
+

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebShop.Application.Repositories.Framework.Interfaces.Contexts;
-using WebShop.Application.Repositories.Users.Interfaces.Queries;
-using WebShop.Application.Repositories.Users.Services.Queries;
+using WebShop.Application.Repositories.Users.Interfaces;
+using WebShop.Application.Repositories.Users.Services;
 using WebShop.Persistence.AddAuditFieldInterceptors;
 using WebShop.Persistence.Contexts;
 
@@ -23,7 +23,8 @@ namespace WebShop.WebSite
 
             #region DiContainer
             applicationBuilder.Services.AddScoped<IWebShopDbContext, WebShopDbContext>();
-            applicationBuilder.Services.AddScoped<IGetUsers, GetUsers>();
+            applicationBuilder.Services.AddScoped<IUserService, UserService>();
+            applicationBuilder.Services.AddScoped<IRoleService, RoleService>();
             var cnn = applicationBuilder.Configuration.GetConnectionString("SqlConnection");
             applicationBuilder.Services.AddEntityFrameworkSqlServer().AddDbContext<WebShopDbContext>(option => option.UseSqlServer(cnn));
             
