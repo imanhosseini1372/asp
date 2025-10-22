@@ -18,5 +18,6 @@ namespace WebShop.Application.Dto.Users
         public int RoleId { get; set; }
         public string? RoleTitle { get; set; }
         public bool IsDelete { get; set; }
+        public string Mobile { get; set; }
     }
 }

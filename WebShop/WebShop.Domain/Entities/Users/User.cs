@@ -19,6 +19,7 @@ namespace WebShop.Domain.Entities.Users
         public string Password { get; set; }
        
         public string Email { get; set; }
+        public string Mobile { get; set; }
         
         public int RoleId { get; set; }
        

@@ -18,7 +18,18 @@ namespace WebShop.WebSite
             applicationBuilder.Services.AddControllersWithViews();
 
             #region Authentication
-          
+
+            applicationBuilder.Services.AddAuthentication(option =>
+            {
+                option.DefaultAuthenticateScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+                option.DefaultChallengeScheme=CookieAuthenticationDefaults.AuthenticationScheme;
+                option.DefaultSignInScheme= CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(option=>
+            { 
+                option.ExpireTimeSpan = TimeSpan.FromDays(1);
+                option.LoginPath = "/Login";
+                option.LogoutPath="/Logout";
+            });
             #endregion
 
             #region DiContainer

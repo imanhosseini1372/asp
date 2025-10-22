@@ -4,5 +4,6 @@
     {
         public List<T> List { get; set; }
         public int rowsCount { get; set; }
+        public int PageCount { get; set; }
     }
 }

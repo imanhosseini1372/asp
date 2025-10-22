@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebShop.WebSite.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         [AllowAnonymous]
@@ -10,5 +11,7 @@ namespace WebShop.WebSite.Controllers
         {
             return View();
         }
+
+       
     }
 }

@@ -1,0 +1,83 @@
+﻿
+/* برای زبان فارسی، جهت‌دهی را روی راست به چپ تنظیم می‌کنیم */
+body {
+    direction: rtl;
+    text-align: right;
+    background-color: #f5f5f5; /* پس‌زمینه کلی صفحه */
+}
+
+/* استایل‌دهی به کانتینر فرم */
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto; /* مرکز قرار دادن در حالت پیش‌فرض */
+}
+
+    /* برای ورودی‌های فرم در حالت Bootstrap 3 */
+    .form-signin .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+    .form-signin input[type="text"],
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+
+/* کادر حساب کاربری */
+.account-wall {
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px; /* فضای داخلی */
+    background-color: #ffffff; /* پس‌زمینه سفید برای فرم */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); /* سایه زیبا */
+    border-radius: 6px; /* گوشه‌های کمی گرد */
+}
+
+/* تصویر نمایه (Profile Image) */
+.profile-img {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%; /* گرد کردن کامل تصویر */
+    object-fit: cover; /* مطمئن شدن از اینکه تصویر به درستی نمایش داده می‌شود */
+    border: 3px solid #ccc; /* یک حاشیه کوچک برای برجسته‌سازی */
+}
+
+/* عنوان ورود */
+.login-title {
+    color: #555;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* لینک‌های کمکی */
+.need-help {
+    margin-top: 10px;
+}
+
+.new-account {
+    display: block;
+    margin-top: 15px;
+    color: #999;
+}
+
+/* تنظیم دکمه "مرا به خاطر بسپار" برای نمایش صحیح در RTL */
+.checkbox.pull-right {
+    padding-left: 0; /* حذف padding اضافی پیش‌فرض */
+    padding-right: 20px; /* اضافه کردن padding برای چک باکس */
+}
+
+    .checkbox.pull-right input[type="checkbox"] {
+        margin-right: -20px; /* تنظیم موقعیت چک باکس */
+        margin-left: 0;
+    }
+
+

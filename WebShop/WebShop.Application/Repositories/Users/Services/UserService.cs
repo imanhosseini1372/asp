@@ -26,6 +26,7 @@ namespace WebShop.Application.Repositories.Users.Services
         #endregion
 
         #region Queries
+
         public ResultGetListDto<UserDto> GetAllUsers(int pageNum, int pageSize, string searchKey = "")
         {
             int rowsCount = 0;
@@ -52,13 +53,18 @@ namespace WebShop.Application.Repositories.Users.Services
                                 UserName = e.UserName,
                                 FullName = e.FullName,
                                 Email = e.Email,
+                                Mobile = e.Mobile,
                                 RoleId = e.RoleId,
                                 RoleTitle = e.Role.RoleTitle,
-                                IsDelete=e.IsDeleted
+                                IsDelete = e.IsDeleted
 
-                            }).ToList()
+
+                            })
+                            .OrderByDescending(e => e.Id)
+                            .ToList()
                             ,
-                rowsCount = rowsCount
+                rowsCount = rowsCount,
+                PageCount = Pagination.PageCount(rowsCount, pageSize)
             };
         }
         public ResultGetListDto<UserDto> GetAllUsersDeleted(int pageNum, int pageSize, string searchKey = "")
@@ -79,7 +85,7 @@ namespace WebShop.Application.Repositories.Users.Services
             return new ResultGetListDto<UserDto>()
             {
                 List = users.Include(e => e.Role)
-                            .Where(e=>e.IsDeleted )
+                            .Where(e => e.IsDeleted)
                             .AsNoTracking()
                             .ToPaged(pageNum, pageSize, out rowsCount)
                             .Select(e => new UserDto()
@@ -87,19 +93,23 @@ namespace WebShop.Application.Repositories.Users.Services
                                 Id = e.Id,
                                 UserName = e.UserName,
                                 FullName = e.FullName,
+                                Mobile = e.Mobile,
                                 Email = e.Email,
                                 RoleId = e.RoleId,
                                 RoleTitle = e.Role.RoleTitle,
-                                IsDelete=e.IsDeleted,
-                            }).ToList()
+                                IsDelete = e.IsDeleted,
+                            })
+                            .OrderByDescending(e => e.Id)
+                            .ToList()
                             ,
-                rowsCount = rowsCount
+                rowsCount = rowsCount,
+                PageCount = Pagination.PageCount(rowsCount, pageSize)
             };
         }
         public ResultDto<UserDto> GetUserById(int userId)
         {
             var getUser = _db.Users.SingleOrDefault(e => e.Id == userId);
-            if (getUser!=null)
+            if (getUser != null)
             {
                 var userDto = new UserDto()
                 {
@@ -107,6 +117,7 @@ namespace WebShop.Application.Repositories.Users.Services
                     UserName = getUser.UserName,
                     FullName = getUser.FullName,
                     Email = getUser.Email,
+                    Mobile = getUser.Mobile,
                     RoleId = getUser.RoleId,
                     RoleTitle = getUser.Role.RoleTitle
 
@@ -115,12 +126,14 @@ namespace WebShop.Application.Repositories.Users.Services
             }
             return new ResultDto<UserDto>() { IsSuccess = false, Message = "Failed" };
         }
+
+
         #endregion
 
         #region Commands
-        public ResultDto<int> CreateUser(UserDto addUser) 
+        public ResultDto<int> CreateUser(UserDto addUser)
         {
-            
+
             if (_db.Users.IgnoreQueryFilters().Any(e => e.Email.ToLower() == addUser.Email.ToLower()))
             {
                 return new ResultDto<int>() { IsSuccess = false, Message = "با این ایمیل قبلا ثبت نام شده است", Result = -1 };
@@ -129,14 +142,15 @@ namespace WebShop.Application.Repositories.Users.Services
             {
                 return new ResultDto<int>() { IsSuccess = false, Message = "نام کاربری تکراری است", Result = -1 };
             }
-            User user=new User() 
+            User user = new User()
             {
-                Id=0,
-                UserName=addUser.UserName,
-                FullName=addUser.FullName,
-                Email=addUser.Email,
-                RoleId=addUser.RoleId,
-                Password=PasswordHasher.HashPassword(addUser.Password),
+                Id = 0,
+                UserName = addUser.UserName,
+                FullName = addUser.FullName,
+                Email = addUser.Email,
+                Mobile = addUser.Mobile,
+                RoleId = addUser.RoleId,
+                Password = PasswordHasher.HashPassword(addUser.Password),
 
             };
             _db.Users.Add(user);
@@ -144,10 +158,10 @@ namespace WebShop.Application.Repositories.Users.Services
             return new ResultDto<int>() { IsSuccess = true, Message = "ثبت نام با موفقیت انجام شد", Result = user.Id };
         }
 
-        public ResultDto DeleteUserOrUndoDelete(int userId) 
+        public ResultDto DeleteUserOrUndoDelete(int userId)
         {
-           var deleteUser= _db.Users.IgnoreQueryFilters().SingleOrDefault(e=>e.Id==userId);
-            if (deleteUser!=null)
+            var deleteUser = _db.Users.IgnoreQueryFilters().SingleOrDefault(e => e.Id == userId);
+            if (deleteUser != null)
             {
                 try
                 {
@@ -158,14 +172,14 @@ namespace WebShop.Application.Repositories.Users.Services
                 catch (Exception e)
                 {
 
-                    return new ResultDto() { IsSuccess = true, Message =e.Message };
+                    return new ResultDto() { IsSuccess = true, Message = e.Message };
                 }
             }
             return new ResultDto() { IsSuccess = true, Message = "Failed" };
         }
-        public ResultDto ResetPassword(int userId) 
+        public ResultDto ResetPassword(int userId)
         {
-           var User= _db.Users.SingleOrDefault(e=>e.Id==userId);
+            var User = _db.Users.SingleOrDefault(e => e.Id == userId);
             if (User != null)
             {
                 try
@@ -177,7 +191,33 @@ namespace WebShop.Application.Repositories.Users.Services
                 catch (Exception e)
                 {
 
-                    return new ResultDto() { IsSuccess = true, Message =e.Message };
+                    return new ResultDto() { IsSuccess = true, Message = e.Message };
+                }
+            }
+            return new ResultDto() { IsSuccess = true, Message = "Failed" };
+        }
+
+        public ResultDto UpdateUser(UserDto editUser)
+        {
+            var user = _db.Users.SingleOrDefault(e => e.Id == editUser.Id);
+            if (user != null)
+            {
+                try
+                {
+                    user.FullName = editUser.FullName;
+                    user.UserName = editUser.UserName;
+                    user.Email = editUser.Email;
+                    user.Password = PasswordHasher.HashPassword(editUser.Password);
+                    user.Mobile = editUser.Mobile;
+                    user.RoleId = editUser.RoleId;
+
+                    _db.SaveChanges();
+                    return new ResultDto() { IsSuccess = true, Message = "Success" };
+                }
+                catch (Exception e)
+                {
+
+                    return new ResultDto() { IsSuccess = true, Message = e.Message };
                 }
             }
             return new ResultDto() { IsSuccess = true, Message = "Failed" };

@@ -20,6 +20,7 @@ namespace WebShop.Application.Repositories.Users.Interfaces
         ResultDto<int> CreateUser(UserDto addUser);
         ResultDto DeleteUserOrUndoDelete(int userId);
         ResultDto ResetPassword(int userId);
+        ResultDto UpdateUser(UserDto editUser);
         #endregion
     }
 }

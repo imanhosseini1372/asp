@@ -27,22 +27,34 @@ namespace WebShop.WebSite.Areas.Admin.Controllers
         public IActionResult UserList(int pageNum = 1, int pageSize = 10 ,bool isDelete=false)
         {
             ViewBag.DeleteList = isDelete;
+            ViewBag.Previous = pageNum - 1;
+            ViewBag.Next = pageNum + 1;
+            ViewBag.PageNum = pageNum;
+
             ResultGetListDto<UserDto> res;
             if (!isDelete)
             {
               
                 res = _UsersService.GetAllUsers(pageNum, pageSize);
+            
             }
             else 
             {
                 
                 res = _UsersService.GetAllUsersDeleted(pageNum, pageSize);
             }
+            //اگر صفحه آخر باشد باقی مانده ردیف ها را نشان میدهد و نباید به تعداد
+            //pagesize ردیف برگردانده شود
+            if (res.PageCount==pageNum)
+            {
+                int takeLast = res.rowsCount % pageSize;
+               res.List= res.List.TakeLast(takeLast).ToList();
+            }
+
+            ViewBag.Count = res.PageCount;
                 return View(res);
         }
         #endregion
-
-      
 
         #region CreateUser
         
@@ -102,6 +114,7 @@ namespace WebShop.WebSite.Areas.Admin.Controllers
         }
 
         #endregion
+
         #endregion
     }
 }
