@@ -25,6 +25,8 @@ namespace WebShop.Application.Dto.Users
         [MinLength(10, ErrorMessage = " فیلد ایمیل نمیتواند کمتر از 10 کارکتر باشد ")]
         [EmailAddress(ErrorMessage = " ساختار ایمیل اشتباه می باشد ")]
         public string Email { get; set; }
+
+
         [Required(ErrorMessage = "لطفا فیلد  موبایل را پرنمایید")]
         [MinLength(11, ErrorMessage = " فیلد موبایل نمیتواند کمتر از 10 کارکتر باشد ")]
         [MaxLength(11, ErrorMessage = " فیلد موبایل نمیتواند کمتر از 10 کارکتر باشد ")]

@@ -1,18 +1,25 @@
 ﻿@{
-    ViewData["Title"] = "ویرایش کاربر جدید";
+    ViewData["Title"] = "ویرایش کاربر";
 }
 @model UserDto
 <div class="container">
 
-    <h4>ویرایش کاربر جدید</h4>
+    <h4>ویرایش کاربر </h4>
 
     <form asp-action="EditUser" class="form-signin" method="post">
         <input asp-for="Id" type="hidden" class="form-control">
+        <input asp-for="Password" type="hidden" class="form-control">
         <div class="form-group">
             <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری" autofocus>
         </div>
         <div class="form-group">
+            <input asp-for="FullName" type="text" class="form-control" placeholder="نام" autofocus>
+        </div>
+        <div class="form-group">
             <input asp-for="Email" type="email" class="form-control" placeholder="ایمیل ">
+        </div>
+        <div class="form-group">
+            <input asp-for="Mobile" type="number" class="form-control" placeholder="موبایل ">
         </div>
         <div class="form-group">
             <div class="form-group">
@@ -20,10 +27,10 @@
                 <div class="col-sm-10">
                     <select name="RoleId" class="form-control" required>
                         <option value=@Model.RoleId> @Model.RoleTitle</option>
-                    @*     @foreach (Role item in ViewBag.Role)
+                        @foreach (RoleDto item in ViewBag.Role)
                         {
-                            <option value="@item.Id">@item.RoleTitle</option>
-                        } *@
+                            <option value="@item.RoleId">@item.RoleTitle</option>
+                        }
 
 
                     </select>

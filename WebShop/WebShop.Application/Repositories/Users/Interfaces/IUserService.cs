@@ -15,6 +15,7 @@ namespace WebShop.Application.Repositories.Users.Interfaces
         ResultGetListDto<UserDto> GetAllUsers(int pageNum, int pageSize, string searchKey = "");
         ResultGetListDto<UserDto> GetAllUsersDeleted(int pageNum, int pageSize, string searchKey = "");
         ResultDto<UserDto> GetUserById(int userId);
+        ResultDto<UserDto> GetUserByUserNameOrEmail(string searchKey);
         #endregion
         #region Commands
         ResultDto<int> CreateUser(UserDto addUser);

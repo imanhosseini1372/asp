@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{D308CE3E-62C7-4855-BCF8-F9D049A65B33}|WebShop.Application\\WebShop.Application.csproj|solutionrelative:webshop.application\\repositories\\users\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\areas\\admin\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\areas\\admin\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\areas\\admin\\views\\account\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\areas\\admin\\views\\account\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|c:\\project\\webshop\\webshop\\webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{35E440C9-5A17-4ADB-BCDC-B59CBFD67FD1}|WebShop.Domain\\WebShop.Domain.csproj|solutionrelative:webshop.domain\\entities\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|c:\\project\\webshop\\webshop\\webshop.website\\areas\\admin\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99B5BF24-57E8-4B99-A91A-BFBC272AC313}|WebShop.WebSite\\WebShop.WebSite.csproj|solutionrelative:webshop.website\\areas\\admin\\views\\account\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,18 +26,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 412,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 342,
-          "SelectedChildIndex": 2,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -46,22 +40,22 @@
               "RelativeDocumentMoniker": "WebShop.Application\\Repositories\\Users\\Services\\UserService.cs",
               "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Application\\Repositories\\Users\\Services\\UserService.cs",
               "RelativeToolTip": "WebShop.Application\\Repositories\\Users\\Services\\UserService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAgwD4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAkwHEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:53:33.002Z",
+              "WhenOpened": "2025-11-01T07:51:46.37Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserList.cshtml",
               "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Areas\\Admin\\Views\\Account\\UserList.cshtml",
               "RelativeDocumentMoniker": "WebShop.WebSite\\Areas\\Admin\\Views\\Account\\UserList.cshtml",
               "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Areas\\Admin\\Views\\Account\\UserList.cshtml",
               "RelativeToolTip": "WebShop.WebSite\\Areas\\Admin\\Views\\Account\\UserList.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAACUAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-22T12:44:52.516Z",
+              "WhenOpened": "2025-11-01T08:00:43.575Z",
               "EditorCaption": ""
             },
             {
@@ -72,22 +66,22 @@
               "RelativeDocumentMoniker": "WebShop.WebSite\\Areas\\Admin\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Areas\\Admin\\Controllers\\AccountController.cs",
               "RelativeToolTip": "WebShop.WebSite\\Areas\\Admin\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAQwCQAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv2MAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T12:42:36.514Z",
+              "WhenOpened": "2025-11-01T07:58:47.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
-              "RelativeDocumentMoniker": "WebShop.Domain\\Entities\\Users\\User.cs",
-              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.Domain\\Entities\\Users\\User.cs",
-              "RelativeToolTip": "WebShop.Domain\\Entities\\Users\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T07:51:50.454Z",
+              "DocumentIndex": 2,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Areas\\Admin\\Views\\Account\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "WebShop.WebSite\\Areas\\Admin\\Views\\Account\\EditUser.cshtml",
+              "ToolTip": "C:\\Project\\WebShop\\WebShop\\WebShop.WebSite\\Areas\\Admin\\Views\\Account\\EditUser.cshtml",
+              "RelativeToolTip": "WebShop.WebSite\\Areas\\Admin\\Views\\Account\\EditUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-01T07:58:45.471Z",
               "EditorCaption": ""
             }
           ]

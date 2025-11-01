@@ -1,0 +1,50 @@
+﻿<div class="col-lg-3 col-md-3 col-xs-12 pl">
+    <div class="header-left">
+        <div class="header-account text-left">
+            <div class="d-block">
+                <div class="account-box">
+                    <div class="nav-account d-block pl">
+                        <span class="icon-account">
+                            <img src="/img/Portrait_Placeholder.png" class="avator">
+                        </span>
+                        <span class="title-account">حساب کاربری</span>
+                        <div class="dropdown-menu">
+                            <ul class="account-uls mb-0">
+                               @if (User.Identity.IsAuthenticated)
+                                {
+                                   @if (User.IsInRole("Admin"))
+                                    {
+                                        <li class="account-item">
+                                            <a asp-area="Admin" asp-controller="Home" asp-action="Dashboard" class="account-link">مدیریت سایت</a>
+                                        </li>
+                                    }
+                                    <li class="account-item">
+                                        <a href="#" class="account-link">پنل کاربری</a>
+                                    </li>
+                                    <li class="account-item">
+                                        <a href="#" class="account-link">سفارشات من</a>
+                                    </li>
+                                    <li class="account-item">
+                                        <a href="#" class="account-link">تنظیمات</a>
+                                    </li>
+                                    <li class="account-item">
+                                        <a asp-action="Logout" asp-controller="Account" class="account-link">خروج</a>
+                                    </li>
+                                }
+                                else
+                                {
+                                <li class="account-item">
+                                        <a asp-controller="Account" asp-action="Login" class="account-link">ورود به سایت </a>
+                                </li>
+                                <li class="account-item">
+                                        <a asp-controller="Account" asp-action="Register" class="account-link">ثبت نام</a>
+                                </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

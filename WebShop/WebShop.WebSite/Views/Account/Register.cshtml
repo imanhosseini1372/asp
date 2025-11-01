@@ -1,54 +1,63 @@
-﻿
-
-
-@model RegisterDto
+﻿@model RegisterDto
 @{
     Layout = null;
 }
 @{
     ViewData["Title"] = "ایجاد حساب کاربری";
 }
-<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ایجاد حساب کاربری </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/css/styleLoginAndSingup.css" asp-append-version="true" />
+    <title>
+        @ViewData["Title"]
+    </title>
+    <link href="/css/LoginAndRegister.css" rel="stylesheet" asp-append-version="true" />
 </head>
 <body>
+    <div class="background-image"></div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <h1 class="text-center login-title">ایجاد حساب کاربری</h1>
-                <div class="account-wall">
-                    <img class="profile-img" src="~/img/Portrait_Placeholder.png" alt="Profile Image">
+    <div class="login-container">
 
-                    <form asp-action="Register" class="form-signin">
-                        <input asp-for="FullName" type="text" class="form-control" placeholder="نام و نام خانوادگی" autofocus>
-                        <input asp-for="UserName" type="text" class="form-control" placeholder="نام کاربری" autofocus>
-                        <input asp-for="Email" type="email" class="form-control" placeholder="ایمیل ">
 
-                        <input asp-for="Password" type="password" class="form-control" placeholder="کلمه عبور">
-                        <input asp-for="RePassword" type="password" class="form-control" placeholder=" تکرار کلمه عبور">
-                        <button class=" btn btn-lg btn-success btn-block" type="submit">
-                            ثبت نام
-                        </button>
-                        <div asp-validation-summary="All" class="text-danger"></div>
-                        <label class="checkbox pull-right">
-                            <input type="checkbox" value="remember-me">
-                            مرا به خاطر بسپار
-                        </label>
-
-                    </form>
-                </div>
-                <a asp-controller="Account" asp-action="Login" class="text-center new-account">ورود به حساب کاربری </a>
+        <form asp-action="Register" method="post">
+            <div class="form-group">
+                <label for="fullname">نام و نام خانوادگی</label>
+                <input asp-for="FullName" type="text"  />
             </div>
+            <div class="form-group">
+                <label for="username">نام کاربری</label>
+                <input asp-for="UserName" type="text"  />
+            </div>
+            <div class="form-group">
+                <label for="email"> ایمیل</label>
+                <input asp-for="Email" type="text" />
+            </div>
+            <div class="form-group">
+                <label for="mobile"> موبایل</label>
+                <input asp-for="Mobile" type="tel" />
+            </div>
+            <div class="form-group">
+                <label for="password">رمز عبور</label>
+                <input asp-for="Password" type="password" />
+            </div>
+            
+            <div class="form-group">
+                <label for="repassword">تکرار رمز عبور</label>
+                <input asp-for="RePassword" type="password" />
+            </div>
+
+         
+
+            <button type="submit" class="login-button">ثبت نام</button>
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+        </form>
+
+        <div class="bottom-links">
+            <a asp-action="Login" asp-controller="Account" class="bottom-button">ورود حساب کاربری</a>
         </div>
     </div>
-
 </body>
 </html>

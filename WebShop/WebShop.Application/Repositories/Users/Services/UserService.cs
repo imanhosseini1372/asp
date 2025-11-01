@@ -108,7 +108,9 @@ namespace WebShop.Application.Repositories.Users.Services
         }
         public ResultDto<UserDto> GetUserById(int userId)
         {
-            var getUser = _db.Users.SingleOrDefault(e => e.Id == userId);
+            var getUser = _db.Users
+                .Include(e=>e.Role)
+                .SingleOrDefault(e => e.Id == userId);
             if (getUser != null)
             {
                 var userDto = new UserDto()
@@ -118,6 +120,7 @@ namespace WebShop.Application.Repositories.Users.Services
                     FullName = getUser.FullName,
                     Email = getUser.Email,
                     Mobile = getUser.Mobile,
+                    Password= getUser.Password,
                     RoleId = getUser.RoleId,
                     RoleTitle = getUser.Role.RoleTitle
 
@@ -126,7 +129,36 @@ namespace WebShop.Application.Repositories.Users.Services
             }
             return new ResultDto<UserDto>() { IsSuccess = false, Message = "Failed" };
         }
+       public ResultDto<UserDto> GetUserByUserNameOrEmail(string searchKey) 
+        {
+            
+           User user= _db.Users
+                .Include(e=>e.Role)
+                .SingleOrDefault(e=>e.UserName.ToLower()==searchKey|| e.Email.ToLower()== searchKey.ToLower());
+            var res = new ResultDto<UserDto>();
+            if (user != null)
+            {
+                res.IsSuccess = true;
+                res.Message = "Success";
+                res.Result = new UserDto()
+                {Id=user.Id,
+                FullName=user.FullName,
+                    UserName = user.UserName,
+                    Email = user.Email,
+                    Mobile = user.Mobile,
+                    RoleId = user.RoleId,
+                    RoleTitle = user.Role.RoleTitle,
+                    Password = user.Password
+                };
+            }
+            else 
+            {
+                res.IsSuccess = false;
+                res.Message = "Failed";
+            }
 
+                return res; 
+        }
 
         #endregion
 

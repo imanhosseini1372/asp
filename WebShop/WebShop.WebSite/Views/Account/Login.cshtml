@@ -1,0 +1,57 @@
+﻿@model LoginDto
+@{
+    Layout = null;
+}
+@{
+    ViewData["Title"] = "ورود حساب کاربری";
+}
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        @ViewData["Title"]
+    </title>
+    <link href="~/css/LoginAndRegister.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="login-container">
+        
+
+        <form asp-action="Login" id="loginForm" method="post">
+            <div class="form-group">
+                <label for="username">نام کاربری یا نشانی ایمیل</label>
+                <input asp-for="UserNameOrEmail" type="text"  autocomplete="username" />
+            </div>
+            <div class="form-group">
+                <label for="password">رمز عبور</label>
+                <input asp-for="Password" type="password"  autocomplete="current-password" />
+            </div>
+
+            <div class="remember-section">
+                <label class="remember-label">
+                    <div class="toggle-switch">
+                        <input type="checkbox" asp-for="RememberMe" />
+                        <span class="toggle-slider"></span>
+                    </div>
+                    مرا به خاطر بسپار
+                </label>
+            </div>
+
+            <button type="submit" class="login-button">ورود</button>
+        </form>
+
+        <div class="bottom-links">
+            <a asp-action="Register" asp-controller="Account" class="bottom-button">ایجاد حساب کاربری</a>
+            <a asp-action="Register" class="bottom-button">رمز عبورتان را فراموش  کرده اید؟</a>
+        </div>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div class="alert alert-danger center-block"> شما به بخش مورد نظر  دسترسی ندارید لطفا با نام کاربری دارای دسترسی وارد شوید </div>
+        }
+    </div>
+   
+</body>
+</html>

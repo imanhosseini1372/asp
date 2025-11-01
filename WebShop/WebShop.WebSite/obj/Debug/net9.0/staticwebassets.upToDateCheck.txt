@@ -15,6 +15,7 @@ C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\AdminTemplate\app-assets\vend
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\SiteTemplate\assets\fonts\lightgallery\lg.svg
+C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\css\LoginAndRegister.css
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\SiteTemplate\assets\css\vendor\nice-select.css
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\AdminTemplate\app-assets\vendors\css\fonts\KaTeX_Script-Regular-2.html
 C:\Project\WebShop\WebShop\WebShop.WebSite\wwwroot\AdminTemplate\app-assets\vendors\js\fullcalendar.min.js
@@ -578,7 +579,9 @@ wwwroot\AdminTemplate\app-assets\vendors\js\toastr.min.js
 wwwroot\AdminTemplate\app-assets\vendors\js\typeahead\bloodhound.min.js
 wwwroot\AdminTemplate\app-assets\vendors\js\typeahead\handlebars.js
 wwwroot\AdminTemplate\app-assets\vendors\js\typeahead\typeahead.bundle.min.js
+wwwroot\css\LoginAndRegister.css
 wwwroot\css\site.css
+wwwroot\img\Portrait_Placeholder.png
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap.min.css

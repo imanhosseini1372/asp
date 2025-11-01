@@ -1,4 +1,5 @@
 ﻿using Humanizer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebShop.Application.Dto.Framework;
 using WebShop.Application.Dto.Users;
@@ -7,6 +8,7 @@ using WebShop.Application.Repositories.Users.Interfaces;
 namespace WebShop.WebSite.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class AccountController : Controller
     {
         #region Inject
@@ -92,16 +94,31 @@ namespace WebShop.WebSite.Areas.Admin.Controllers
         #region EditUser
 
 
-        public IActionResult EditUser(int Id)
+        public IActionResult EditUser(int userId)
         {
-            //ViewBag.Role = _userService.GetRoles().Where(e => e.Id != dto.RoleId);
-            return View();
+            var userDto = _UsersService.GetUserById(userId).Result;
+            var roles= _roleService.GetRoles().List;
+            ViewBag.Role = roles.Where(e => e.RoleId != userDto.RoleId);
+            return View(userDto);
         }
         [HttpPost]
         public IActionResult EditUser(UserDto user)
         {
-            //ViewBag.Role = _userService.GetRoles().Where(e => e.Id != dto.RoleId);
-            return View();
+            if (!ModelState.IsValid)
+            {
+                var roles = _roleService.GetRoles().List;
+                ViewBag.Role = roles;
+                return View(user);
+            }
+            var res= _UsersService.UpdateUser(user);
+            if (!res.IsSuccess)
+            {
+                ModelState.AddModelError("", res.Message);
+                var roles = _roleService.GetRoles().List;
+                ViewBag.Role = roles;
+                return View(user);
+            }
+            return RedirectToAction("UserList");
         }
         #endregion
 
